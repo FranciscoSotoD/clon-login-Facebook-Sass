@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formContenido {
+    max-width: 40rem;
+    @include m.monitor {
+        margin-top: 5rem;
+    }
+}
+.form {
+    background-color: v.$blanco;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 1rem;
+    border: 1px solid v.$grisFuerte;
+    &__formulario {
+        display: flex;
+        flex-direction: column;
+    }
+    &__login {
+        margin-bottom: 2rem;
+    }
+    &__input {
+        width: 100%;
+        color: v.$grisFuerte;
+        padding: 1.5rem;
+        border: 1px solid v.$grisFuerte;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+    }
+    &__submit {
+        border: 1px solid transparent;
+        border-radius: .5rem;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        background-color: v.$azulFuerte;
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition-property: background-color color;
+        transition-duration: .3s;
+        &:hover {
+            background-color: v.$verdeClaro;
+            color: v.$blanco;
+        }
+    }
+    &__olvidaste {
+        text-align: center;
+        font-size: 1.4rem;
+        color: v.$azulFuerte;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__hr {
+        color: v.$grisClaro;
+        width: 100%;
+        margin: 3rem 0;
+    }
+    &__cuentaNueva {
+        border: 1px solid transparent;
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background-color: v.$verdeClaro;
+        color: v.$blanco;
+        border-radius: .5rem;
+        width: 50%;
+        margin: 0 auto;
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: .3s;
+        &:hover {
+            background-color: darken(v.$verdeClaro, 8%);
+        }
+    }
+
+}

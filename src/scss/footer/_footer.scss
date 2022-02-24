@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+.footer {
+    background-color: v.$blanco;
+    @include m.desktop {
+        margin-top: 10rem;
+    }
+    @include m.monitor {
+        height: 20vh;
+        margin-top: 0;
+    }
+    &__contenido {
+        padding: 3rem;
+        @include m.desktop{
+            padding: 3rem 0;
+        }
+    }
+    &__lenguajes {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        row-gap: .5rem;
+        font-size: 1.2rem;
+    }
+    &__hr {
+        margin: rem 0;
+    }
+    &__lenguaje {
+        color: v.$negro;
+    }
+    &__enlace {
+        color: v.$negro;
+    }
+    &__enlaces {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        row-gap: .5rem;
+        font-size: 1.2rem;
+    }
+    &__copy {
+        font-size: 1.2rem;
+        // text-align: center;
+        margin: 2rem 0 0 0;
+    }
+}

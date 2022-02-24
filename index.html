@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Facebook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/83ae700929.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <section class="loginFlex contenedor">
+        <div class="recientes">
+            <h1 class="recientes__heading">Yasbook</h1>
+            <p class="recientes__inicioSesion">Inicios de sesión recientes</p>
+            <p class="recientes__cuenta">Haz click en tu foto o agrega una cuenta</p>
+            <div class="cuentas">
+                <div class="cuentas__usuario">
+                    <div class="cuentas__contenido">
+                        <picture>
+                            <source srcset="build/img/foto1.avif" type="image/avif">
+                            <source srcset="build/img/foto1.webp" type="image/webp">
+                            <img class="cuentas__imagen" loading="lazy" src="build/img/foto1.jpg" width="500" height="300" alt="foto usuario">
+                        </picture>
+                        <i class="fa-solid fa-circle-xmark cuentas__eliminar"></i>
+                    </div>
+                    <p class="cuentas__usuarioNombre">Francisco</p>
+                </div>
+                <div class="cuentas__usuario">
+                    <div class="cuentas__contenido">
+                        <i class="fa-solid fa-circle-plus cuentas__iconMas"></i>
+                    </div>
+                    <!-- <picture>
+                        <source srcset="build/img/foto.avif" type="image/avif">
+                        <source srcset="build/img/foto.webp" type="image/webp">
+                        <img class="cuentas__imagen" loading="lazy" src="build/img/foto.jpg" width="500" height="300" alt="foto usuario">
+                    </picture> -->
+                    <p class="cuentas__usuarioNombre cuentas__usuarioNombre--azul">Agregar cuenta</p>
+                </div>
+            </div>
+        </div>
+        <div class="formContenido">
+            <div class="form">
+                <div class="form__formulario">
+                    <form class="form__login">
+                        <input class="form__input" type="text" placeholder="Correo electrónico o número de teléfono">
+                        <input class="form__input" type="password" placeholder="Contraseña">
+                        <input class="form__submit" type="submit" value="Iniciar sesión">
+                    </form>
+                    <a class="form__olvidaste" href="#">¿Olvidaste tu contraseña?</a>
+                    <hr class="form__hr"/>
+                    <button class="form__cuentaNueva">Crear cuenta nueva</button>
+                </div>
+            </div>
+            <div class="crear">
+                <p class="crear__paginaNueva"> <a class="crear__pagina" href="#">Crea una página </a>para una celebridad, una marca o un negocio</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenido contenedor">
+            <div class="footer__lenguajes">
+                <a class="footer__lenguaje" href="#">Español</a>
+                <a class="footer__lenguaje" href="#">English (US)</a>
+                <a class="footer__lenguaje" href="#">Portugues (Brasil)</a>
+                <a class="footer__lenguaje" href="#">français</a>
+                <a class="footer__lenguaje" href="#">Italiano</a>
+                <a class="footer__lenguaje" href="#">Deutsch</a>
+                <a class="footer__lenguaje" href="#">العربي</a>
+                <a class="footer__lenguaje" href="#">日本語</a>
+                <a class="footer__lenguaje" href="#">中文(简体)</a>
+            </div>
+            <hr class="footer__hr">
+            <div class="footer__enlaces">
+                <a class="footer__enlace" href="#">Registrate</a>
+                <a class="footer__enlace" href="#">Iniciar sesión</a>
+                <a class="footer__enlace" href="#">Messenger</a>
+                <a class="footer__enlace" href="#">Facebook Lite</a>
+                <a class="footer__enlace" href="#">Watch</a>
+                <a class="footer__enlace" href="#">Lugares</a>
+                <a class="footer__enlace" href="#">Juegos</a>
+                <a class="footer__enlace" href="#">Marketplace</a>
+                <a class="footer__enlace" href="#">Facebook Pay</a>
+                <a class="footer__enlace" href="#">Oculus</a>
+                <a class="footer__enlace" href="#">Portal</a>
+                <a class="footer__enlace" href="#">Instagram</a>
+                <a class="footer__enlace" href="#">Bulletin</a>
+                <a class="footer__enlace" href="#">Local</a>
+                <a class="footer__enlace" href="#">Recaudaciones de fondos</a>
+                <a class="footer__enlace" href="#">Servicios</a>
+                <a class="footer__enlace" href="#">Centro de información de votación</a>
+                <a class="footer__enlace" href="#">Grupos</a>
+                <a class="footer__enlace" href="#">Información</a>
+                <a class="footer__enlace" href="#">Crear anuncio</a>
+                <a class="footer__enlace" href="#">Crear página</a>
+                <a class="footer__enlace" href="#">Desarrolladores</a>
+                <a class="footer__enlace" href="#">Empleo</a>
+                <a class="footer__enlace" href="#">Privacidad</a>
+                <a class="footer__enlace" href="#">Cookies</a>
+                <a class="footer__enlace" href="#">Opciones de anuncios</a>
+                <a class="footer__enlace" href="#">Condiciones</a>
+                <a class="footer__enlace" href="#">Ayuda</a>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copy">&copy;  Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

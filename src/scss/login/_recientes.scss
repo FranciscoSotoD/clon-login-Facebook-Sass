@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.recientes {
+    text-align: center;
+    @include m.desktop {
+        text-align: left;
+    }
+    &__heading {
+        text-transform: lowercase;
+        color: v.$azulFuerte;
+        @include m.desktop {
+            text-align: left;
+        }
+    }
+    &__inicioSesion {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+}

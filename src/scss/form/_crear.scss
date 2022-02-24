@@ -1,0 +1,9 @@
+@use 'base/variables' as v;
+
+.crear {
+    padding: 2rem 3rem;
+    text-align: center;
+    &__pagina {
+        font-weight: 700;
+    }
+}

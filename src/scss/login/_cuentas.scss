@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+
+.cuentas {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    position: relative;
+    &__usuario {
+        min-width: 18rem;
+        max-width: 18rem;
+        border-radius: 1rem;
+        border: 1px solid v.$grisFuerte;
+        overflow: hidden;
+        cursor: pointer;
+        transition-property: box-shadow;
+        transition-duration: .3s;
+        &:hover{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+    &__usuarioNombre {
+        background-color: v.$blanco;
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    &__usuarioNombre--azul {
+        color: v.$azulFuerte;
+        font-weight: 400;
+    }
+    &__eliminar {
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+        font-size: 2.2rem;
+        color: lighten( v.$negro, 50%);
+        transition-property: color font-size border;
+        transition-duration: .3s;
+        &:hover {
+            color: v.$blanco;
+            font-size: 3rem;
+            top: -1rem;
+            left: -1rem;
+            // border: 1px solid v.$negro;
+            // border-radius: 50%;
+        }
+    }
+    &__iconMas {
+        font-size: 5.8rem;
+        padding: 6rem;
+        color: v.$azulFuerte;
+    }
+}
