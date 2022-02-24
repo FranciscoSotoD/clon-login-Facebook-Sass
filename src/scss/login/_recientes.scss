@@ -9,12 +9,17 @@
     &__heading {
         text-transform: lowercase;
         color: v.$azulFuerte;
+        font-size: 3.4rem;
         @include m.desktop {
             text-align: left;
+            font-size: 4rem;
         }
     }
     &__inicioSesion {
-        font-size: 3rem;
+        font-size: 2.2rem;
         font-weight: 400;
+        @include m.desktop {
+            font-size: 3rem;
+        }
     }
 }
